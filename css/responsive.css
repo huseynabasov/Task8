@@ -1,0 +1,115 @@
+@media only screen and (max-width: 768px) {
+    .mobile_icon {
+        display: inherit;
+    }
+
+    .ani_links {
+        display: none;
+    }
+
+    .ani_exp {
+        padding: 40px 0 0;
+    }
+
+    .ani_exp h1 {
+        font-size: 40px;
+    }
+
+    .ani_exp h1 span::before {
+        bottom: 20px;
+        height: 6px;
+    }
+
+    .ani_exp p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .cars {
+        top: 48%;
+    }
+
+    .ani_car {
+        height: 60vh;
+    }
+
+    .ani_car img {
+        width: 35%;
+    }
+
+    .ani_exp a.btn_exp {
+        font-size: 16px;
+        padding: 20px 32px;
+    }
+
+    .ani_card_text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .ani_card_text h1 {
+        font-size: 40px;
+    }
+
+    .ani_cards {
+        margin: 50px 10px 40px;
+        gap: 40px;
+    }
+
+    .ani_rl {
+        top: -175px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .ani_exp h1 {
+        font-size: 30px;
+    }
+
+    .ani_exp {
+        padding: 30px 0 0;
+    }
+
+    .ani_exp p {
+        font-size: 14px;
+        margin: 20px 0 50px;
+    }
+
+    .ani_exp a.btn_exp {
+        font-size: 14px;
+        padding: 18px 30px;
+    }
+
+    .ani_exp h1 span::before {
+        bottom: 22px;
+        height: 4px;
+    }
+
+    .ani_car {
+        height: 50vh;
+    }
+    .cars {
+        top: 56%;
+    }
+    .ani_card_text h1 {
+        font-size: 30px;
+    }
+
+    .ani_card_text p {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .ani_cards {
+        flex-direction: column;
+
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .ani_rl {
+        display: none;
+    }
+}

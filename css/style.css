@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*Logo menu hisse*/
+.ani_header {
+    background-color: white;
+}
+
+.ani_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.ani_nav .ani_links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.ani_nav .ani_links ul li a {
+    color: #00095E;
+    font-size: 16px;
+    padding: 5px 0;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.ani_nav .ani_links ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    background-color: #00095E;
+    height: 2px;
+    width: 100%;
+}
+
+.ani_nav .ani_links ul li:last-of-type a::before {
+    position: inherit;
+}
+
+.ani_nav .ani_links ul li a:hover::before {
+    transition: 0.5s;
+    left: 0;
+}
+
+.ani_nav .ani_links ul li a:hover {
+    color: #7EA0FF;
+}
+
+.ani_nav .ani_logo img {
+    width: 180px;
+}
+
+.ani_nav .ani_links ul li:last-of-type a {
+    padding: 20px 30px;
+    background-color: #FFC800;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+.ani_nav .ani_links ul li:last-of-type a:hover {
+    background-color: white;
+    color: #FFC800;
+    border: 1px solid #FFC800;
+    box-shadow: 0 0 5px #FFC800;
+}
+
+.ani_nav .ani_links ul li:last-of-type a i {
+    margin-right: 10px;
+}
+.mobile_icon {
+    display: none;
+}
+
+/*Basliq yazi hisse*/
+.ani_exp {
+    text-align: center;
+    padding: 60px 0 0;
+}
+
+.ani_exp h1 {
+    color: #00095E;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.ani_exp h1 span {
+    display: inline-block;
+    position: relative;
+}
+
+.ani_exp h1 span::before {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    background-color: #FFC800;
+    height: 8px;
+    width: 100%;
+    z-index: -1;
+}
+
+.ani_exp p {
+    color: #00095E;
+    font-size: 20px;
+    margin: 30px 0 80px;
+}
+
+.ani_exp a.btn_exp {
+    padding: 30px 50px;
+    background: linear-gradient(270deg, #0027ff, #001d65);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.ani_exp a.btn_exp::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFC800;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ani_exp a.btn_exp:hover::before {
+    top: 0;
+}
+
+.ani_exp a.btn_exp:hover {
+    color: black;
+}
+
+/*Animasiya hisse*/
+.ani_car {
+    background-image: url(../img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.ani_car img {
+    animation: cars 8s linear infinite alternate;
+    width: 50%;
+
+}
+
+@keyframes cars {
+
+    0%,
+    100% {
+        transform: translate(0, 0)
+    }
+
+    50% {
+        transform: translate(-100px, 0);
+    }
+
+    75% {
+        transform: translate(100px, 0);
+    }
+}
+
+.cars {
+    position: relative;
+    top: 35%;
+    left: 0;
+}
+
+/*Cardlar olan hisse*/
+.ani_card_text h1,
+.ani_card_text p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.ani_card_text p {
+    color: #7EA0FF;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.ani_card_text h1 {
+    color: #00095E;
+    font-size: 60px;
+}
+
+.ani_cards {
+    margin: 50px 0 100px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cards {
+    width: 33%;
+    box-shadow: 0 10px 15px rgba(0, 9, 94, 0.274);
+    border-radius: 8px;  
+}
+
+.cards:hover img {
+    transform: scale(1.1); 
+}
+
+.card_img {
+    overflow: hidden;
+}
+
+.cards img {
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+
+.card_about {
+    padding: 30px 15px;
+    background-color: rgb(248, 239, 227);
+}
+
+.card_about ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card_about ul li a {
+    color: #00095E;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card_about ul li p {
+    color: #7EA0FF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card_about ul+a {
+    color: #7EA0FF;
+    background-color: #e8eeff;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.ani_rl {
+    position: relative;
+    top: -240px;
+}
+.ani_rl i { 
+    font-size: 32px; 
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.ani_rl i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.ani_rl i:first-of-type {
+    position: absolute;
+    top: 0;
+    left: -25px;
+}
+.ani_rl i:last-of-type {
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
