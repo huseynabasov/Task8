@@ -139,6 +139,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transition: all 1s;
 }
 
 .ani_exp a.btn_exp::before {
@@ -150,7 +151,7 @@
     height: 100%;
     background-color: #FFC800;
     z-index: -1;
-    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .ani_exp a.btn_exp:hover::before {
@@ -276,7 +277,7 @@
 }
 .ani_rl {
     position: relative;
-    top: -240px;
+    top: -300px;
 }
 .ani_rl i { 
     font-size: 32px; 
